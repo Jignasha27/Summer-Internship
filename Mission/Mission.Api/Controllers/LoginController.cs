@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Mission.Entities.ViewModels;
 using Mission.Entities.ViewModels.Login;
+<<<<<<< HEAD
 using Mission.Entities.ViewModels.User;
+=======
+>>>>>>> 0658e5ba63fccb12db896632d6930c5055d95686
 using Mission.Services.IService;
 
 namespace Mission.Api.Controllers
@@ -13,7 +16,11 @@ namespace Mission.Api.Controllers
         private readonly IUserService _userService = userService;
 
         [HttpPost]
+<<<<<<< HEAD
         [Route("LoginUser")]        
+=======
+        [Route("LoginUser")]
+>>>>>>> 0658e5ba63fccb12db896632d6930c5055d95686
         public async Task<IActionResult> LoginUser(UserLoginRequestModel model) 
         {
             var response = await _userService.LogiUser(model);
@@ -25,6 +32,7 @@ namespace Mission.Api.Controllers
 
             return Ok(response);
         }
+<<<<<<< HEAD
 
         [HttpPost]
         [Route("Register")]
@@ -83,5 +91,7 @@ namespace Mission.Api.Controllers
 
             return Ok(response);
         }
+=======
+>>>>>>> 0658e5ba63fccb12db896632d6930c5055d95686
     }
 }

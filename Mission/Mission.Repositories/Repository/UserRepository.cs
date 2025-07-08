@@ -1,9 +1,15 @@
+<<<<<<< HEAD
 ﻿using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using Mission.Entities;
 using Mission.Entities.Models;
 using Mission.Entities.ViewModels.Login;
 using Mission.Entities.ViewModels.User;
+=======
+﻿using Microsoft.EntityFrameworkCore;
+using Mission.Entities;
+using Mission.Entities.ViewModels.Login;
+>>>>>>> 0658e5ba63fccb12db896632d6930c5055d95686
 using Mission.Repositories.IRepository;
 
 namespace Mission.Repositories.Repository
@@ -39,6 +45,7 @@ namespace Mission.Repositories.Repository
 
             return (response, "Login Successfully");
         }
+<<<<<<< HEAD
 
         public async Task<List<UserResponseModel>> GetUsersAsync()
         {
@@ -134,5 +141,7 @@ namespace Mission.Repositories.Repository
             await _context.SaveChangesAsync();
             return true;
         }
+=======
+>>>>>>> 0658e5ba63fccb12db896632d6930c5055d95686
     }
 }
